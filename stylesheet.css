@@ -33,6 +33,12 @@ font-size: 50px;
 margin-left: 30px !important;
 }
 
+h2{
+    font-weight: 800px;
+    font-size: 50px;
+    margin: 0 30px;
+}
+
 h4{
 font-weight: bold;
 font-size: 20px ;
@@ -45,6 +51,13 @@ h3{
     font-size: 30px;
     margin-left: 30px !important;
 }
+
+p{
+    font-weight: bold;
+    font-size: 30px;
+    margin: 30px 30px;
+}
+
 
 .hero-banner h4, h1, h3{
     color: white;
@@ -103,24 +116,73 @@ position: absolute; top: 150px;
 right: 252px;
 }
 
+nav{
+    
+height: 100px;
+background-color: white;
+box-shadow: 0 5px 8px rgba(0, 0, 0, .20);  /*so this means 0px on the X axis, 5px on the Y axis, so 5px down and 8 px blur*/
+position: sticky;
+top: 0;
+
+}
+
+nav ul {
+    margin:0 20px 0 0 ;
+    padding: 0;
+}
+
+.logo{  
+    
+    display: block;
+    width: 300px;
+    height: 40px;
+    position: absolute;
+    top: 30px;  
+    background: url(characters/logo.png) no-repeat 0 0 ;
+background-size: contain;
+overflow: hidden;
+text-indent: -999px;
+margin: 0 30px;
+}
+
+nav ul li{
+margin: 0;
+padding: 0;
+display: block;
+float: right;
+}
+
+nav ul li a{
+    display: block;
+height: 100%;
+box-sizing: border-box;
+font-size: 30px;
+text-transform: uppercase;
+font-weight: bold;
+color: #111111;
+text-decoration: none;
+padding: 35px 20px;
+line-height: 30px;
+
+}
+
+.more-info{
+    margin: 3% 0;
+    text-align: center;
+    line-height: normal;
+}
+
+.more-info p {
+    margin: 3% 0 3% 0 ;
+}
 
 
 
-/* you can copy and paste the html in here, while you reference the elements, so you don't have to go back and forth to check */
+/* you can copy and paste the html in here, while you reference the elements, so you don't have to go back and forth to check. I've done so for both the hero banner and the navigarion. Just paste it into comments so you know what you are referencing. */
 
-/* <div class="hero-banner">
-<h4>Kristina<span class="red">, doing a course in Skillshare,</span> presents</h4>
-<h1>The Greatest Gang There Ever Was</h1>
-<h4>It's Triangle Guy, Circle Guy and Triangle Guy's little brother! </h4>
-    <a class="cta alt" href="#read-more">Read More</a>
-</div>
-<div class="character1"></div>
-<div class="character2"></div>
-<div class="character3"></div>
-<nav>
-    <a href="#" class="logo">The Gang</a>
-    <ul>
-        <li><a href="#">Sign Up</a></li>
-        <li><a href="#story">The Story</a></li>
-        <li><a href="#read-more">More Info</a></li>
-    </ul> */
+/* <div class="more-info" id="read-more">
+<h2>Join Our Fan Club</h2>
+<p>Lorem ipsum dolor sit amet <span class="highlight">consectetur adipisicing elit.</span> Corrupti, itaque quo! Impedit perferendis laborum modi placeat possimus maxime aliquam, velit sed? Unde, quibusdam distinctio quo doloribus deleniti sequi qui perferendis.</p>
+<button class="cta">Sign Me Up</button>
+
+</div>*/
