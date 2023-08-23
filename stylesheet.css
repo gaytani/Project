@@ -9,7 +9,7 @@ body, html{
     
 }
 .red{
-    color: rgb(214, 100, 100);
+    color: rgb(229, 198, 162);
 }
 
 .wrapper{
@@ -20,7 +20,7 @@ body, html{
 .hero-banner{
     margin: 0 auto;
     background-color: #007FFF;
-    min-height: 100vh;
+    min-height: 70vh;
     padding: 50px 15px;
     box-sizing: border-box;
     position: relative;
@@ -74,7 +74,15 @@ box-shadow: 0 0 0 10px rgba(0, 127, 255, .15) ;
 margin-left: 30px !important;
 padding: 20px 30px;
 border-radius: 10px;
+border: none;
+outline: none;
 text-decoration: none;
+
+cursor: pointer;
+}
+
+a.cta:active, button.cta:active{
+    opacity: .7;
 }
 
 a.cta.alt, button.cta.alt{
@@ -104,7 +112,7 @@ height: 371px;
 position: absolute;
 top: 161px;
 right: 125px;
-z-index: 1;
+z-index: 2;
 }
 
 .character3{
@@ -123,7 +131,7 @@ background-color: white;
 box-shadow: 0 5px 8px rgba(0, 0, 0, .20);  /*so this means 0px on the X axis, 5px on the Y axis, so 5px down and 8 px blur*/
 position: sticky;
 top: 0;
-
+z-index: 1;
 }
 
 nav ul {
@@ -186,13 +194,148 @@ font-weight: 800px;
 
 }
 
+.nb-list{
+    width: 470px;
+    padding: 20px 20px 20px 20px;
+    box-sizing: border-box;
+    background-color: #ededed;
+float: left;
+margin: 0 20px 20px 0;
+position: relative;
+}
+
+.nb-list li {
+    height: 70px;
+    border-radius: 10px;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+padding: 6px 20px;
+box-sizing: border-box;
+
+}
+
+.nb-list li.red{
+    background-color: #ff3300;
+
+}
+
+.nb-list li.blue{
+    background-color: #007FFF;
+}
+
+.nb-list li.gray{
+    background-color: rgba(0, 0, 0, .1);
+
+}
+
+.nb-list li.yellow{
+    background-color: #ffd400;
+    color: #111111;
+}
+
+.nb-list li.pink{
+    background-color: #ffadf9;
+}
+
+.nb-list li.salmon{
+    background-color: #fa8072;
+}
+
+.nb-list li.dragging{
+    position: absolute;
+    top: 87px;
+    left: 70px;
+    right: -8px;
+    transform: rotate(6deg);
+    box-shadow: 0 2px 14px rgba(0, 0, 0, .3)
+}
+
+.nb-list li.dragging::after{
+content: '';
+display: block;
+position: absolute;
+width: 54px;
+height: 50px;
+background: url(characters/cursor-grabbed.svg);
+background-size: 100%;
+bottom: -22px;
+left: 60%;
+
+} 
+
+.story h3{
+    font-size: 40px;
+    color: #111111;
+    font-weight: 800px;
+}
+
+
+.sep{
+    width: 470px;
+    height: 10px;
+    background-color: #111;
+    margin: 70px auto;
+}
+
+
+.gang-img{
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    font-size: 20px;
+    color: rgba(0, 0, 0, .4);
+    margin: 85px 0 45px;
+    font-weight: bold;
+
+}
+
+.popup{
+display: none;
+
+
+
+
+}
+
+
+
 
 
 /* you can copy and paste the html in here, while you reference the elements, so you don't have to go back and forth to check. I've done so for both the hero banner and the navigarion. Just paste it into comments so you know what you are referencing. */
 
-/* <div class="more-info" id="read-more">
-<h2>Join Our Fan Club</h2>
-<p>Lorem ipsum dolor sit amet <span class="highlight">consectetur adipisicing elit.</span> Corrupti, itaque quo! Impedit perferendis laborum modi placeat possimus maxime aliquam, velit sed? Unde, quibusdam distinctio quo doloribus deleniti sequi qui perferendis.</p>
-<button class="cta">Sign Me Up</button>
+/* <div class="popup">
+<div class="blanket"></div>
+<div class="content">
+    <h2>Fill in Your Details</h2>
+    <form action="">
+        <div class="item">
+        <label>Your First Name</label>
+        <input type="text" placeholder="Ivan">
+        </div>
+        <div class="item">
+            <label>Your Last Name</label>
+            <input type="text" placeholder="Ivanov">
+            </div>
+            <div class="item">
+                <label>Your Favourit Color</label>
+                <input type="text" placeholder="Red">
+                </div>
+                <div class="item">
+                    <label>Your Favourite Food</label>
+                    <input type="text" placeholder="Pasta">
+                    </div>
+                    <button class="cta">I want to Sign Up!</button>
+    </form>
+<button class="close">Close</button>
 
-</div>*/
+</div>
+
+</div>
+
+*/
